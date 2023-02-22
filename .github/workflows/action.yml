@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-dotnet@v2
         with: 
           dotnet-version: '6.0.x'
-      - run: dotnet build
+      - run: dotnet build --runtime win-x64
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
